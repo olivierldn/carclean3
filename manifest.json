@@ -1,0 +1,123 @@
+[
+  {
+    "file": "01_hero_before_after_front.jpg",
+    "size": [
+      2400,
+      2052
+    ],
+    "note": "cropped and upscaled from generated contact sheet"
+  },
+  {
+    "file": "02_hero_clean_front.jpg",
+    "size": [
+      2400,
+      2215
+    ],
+    "note": "cropped and upscaled from generated contact sheet"
+  },
+  {
+    "file": "03_hero_dirty_front.jpg",
+    "size": [
+      2400,
+      2392
+    ],
+    "note": "cropped and upscaled from generated contact sheet"
+  },
+  {
+    "file": "04_side_profile_transformation.jpg",
+    "size": [
+      2800,
+      2182
+    ],
+    "note": "cropped and upscaled from generated contact sheet"
+  },
+  {
+    "file": "05_paint_reflection_overlay.jpg",
+    "size": [
+      2400,
+      1921
+    ],
+    "note": "cropped and upscaled from generated contact sheet"
+  },
+  {
+    "file": "06_water_splash_line_source.jpg",
+    "size": [
+      1600,
+      1620
+    ],
+    "note": "cropped and upscaled from generated contact sheet"
+  },
+  {
+    "file": "07_interior_detail.jpg",
+    "size": [
+      2200,
+      1826
+    ],
+    "note": "cropped and upscaled from generated contact sheet"
+  },
+  {
+    "file": "08_wheel_detail.jpg",
+    "size": [
+      2200,
+      1756
+    ],
+    "note": "cropped and upscaled from generated contact sheet"
+  },
+  {
+    "file": "06_water_splash_line_dark_transparent.png",
+    "size": [
+      1600,
+      1620
+    ],
+    "note": "transparent PNG, dark water line"
+  },
+  {
+    "file": "06_water_splash_line_light_transparent.png",
+    "size": [
+      1600,
+      1620
+    ],
+    "note": "transparent PNG, white water line for hero overlay"
+  },
+  {
+    "file": "09_icon_we_come_to_you.svg",
+    "size": "SVG scalable",
+    "note": "clean website-ready line icon"
+  },
+  {
+    "file": "10_icon_save_time.svg",
+    "size": "SVG scalable",
+    "note": "clean website-ready line icon"
+  },
+  {
+    "file": "11_icon_quality_products.svg",
+    "size": "SVG scalable",
+    "note": "clean website-ready line icon"
+  },
+  {
+    "file": "12_icon_satisfaction_guaranteed.svg",
+    "size": "SVG scalable",
+    "note": "clean website-ready line icon"
+  },
+  {
+    "file": "13_icon_calendar_booking.svg",
+    "size": "SVG scalable",
+    "note": "clean website-ready line icon"
+  },
+  {
+    "file": "a_clean_modern_high_end_website_landing_page_des.png",
+    "size": [
+      863,
+      1822
+    ],
+    "note": "reference only"
+  },
+  {
+    "file": "a_clean_white_background_composite_gallery_image_s.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "note": "reference only"
+  }
+]
