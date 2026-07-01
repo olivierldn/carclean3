@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OLI Mobile Valet — Premium Mobile Car Detailing</title>
+  <meta name="description" content="Professional mobile car valeting and detailing at your home or workplace. OLI Mobile Valet brings showroom results wherever you are." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis smooth scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="02_hero_clean_front.jpg" />
+</head>
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="OLI Mobile Valet — home">
+        <span class="logo-oli">OLI</span>
+        <span class="logo-sub">/ Mobile Valet</span>
+      </a>
+      <nav class="header-right">
+        <button class="nav-menu-btn" aria-label="Open menu" id="menuBtn">
+          <span></span><span></span>
+        </button>
+        <a href="#booking" class="btn-book">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true">
+    <button class="nav-overlay-close" id="navClose" aria-label="Close menu">✕</button>
+    <nav class="nav-overlay-links">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#transformation" class="nav-link">Our Work</a>
+      <a href="#why" class="nav-link">Why OLI</a>
+      <a href="#booking" class="nav-link nav-link-cta">Book Now</a>
+    </nav>
+  </div>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow" aria-hidden="true"></div>
+    <div class="hero-bg-glow-2" aria-hidden="true"></div>
+    <img src="05_paint_reflection_overlay.jpg" class="hero-reflection" alt="" aria-hidden="true" />
+
+    <div class="hero-inner">
+      <!-- Left -->
+      <div class="hero-text">
+        <p class="eyebrow hero-eyebrow">Premium Mobile Valeting</p>
+        <h1 class="hero-heading">
+          <span class="hero-line">SHOWROOM</span>
+          <span class="hero-line">RESULTS.</span>
+          <span class="hero-line hero-line-indent">WHEREVER</span>
+          <span class="hero-line hero-line-indent">YOU ARE.</span>
+        </h1>
+        <p class="hero-body">Professional detailing at your home or workplace.<br />We bring the showroom to you.</p>
+        <a href="#booking" class="btn-primary hero-cta">Get My Car Looking New</a>
+        <div class="hero-avail">
+          <span class="avail-dot" aria-hidden="true"></span>
+          <span>Available 7 Days a Week</span>
+        </div>
+      </div>
+
+      <!-- Right — before/after slider -->
+      <div class="hero-visual" id="heroVisual">
+        <div class="ba-slider" id="baSlider" role="img" aria-label="Before and after car detailing comparison">
+          <!-- Dirty (base layer) -->
+          <div class="ba-dirty">
+            <img src="03_hero_dirty_front.jpg" alt="Car before detailing — dirty exterior" class="ba-img" id="baImgDirty" />
+          </div>
+          <!-- Clean (top layer, clipped) -->
+          <div class="ba-clean" id="baClean">
+            <img src="02_hero_clean_front.jpg" alt="Car after detailing — clean exterior" class="ba-img" id="baImgClean" />
+          </div>
+          <!-- Divider -->
+          <div class="ba-divider" id="baDivider" aria-hidden="true">
+            <div class="ba-handle" id="baHandle">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M7 4l-4 6 4 6M13 4l4 6-4 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <!-- Labels -->
+          <span class="ba-label ba-label-before">Before</span>
+          <span class="ba-label ba-label-after">After</span>
+        </div>
+        <!-- Water splash decorative -->
+        <img src="06_water_splash_line_light_transparent.png" class="hero-splash" alt="" aria-hidden="true" />
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span class="hero-scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TRUST BAR ═══════════════ -->
+  <section class="trust-wrap" aria-label="Credentials">
+    <div class="trust-bar glass-card">
+      <div class="trust-item">
+        <div class="trust-num-row"><span class="trust-number" data-target="1200">0</span><span class="trust-plus">+</span></div>
+        <p class="trust-label">Vehicles Detailed</p>
+      </div>
+      <div class="trust-divider" aria-hidden="true"></div>
+      <div class="trust-item">
+        <span class="trust-stars" aria-label="Five stars">★★★★★</span>
+        <p class="trust-label">4.9 Google Rating</p>
+      </div>
+      <div class="trust-divider" aria-hidden="true"></div>
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <p class="trust-label">Fully Insured</p>
+      </div>
+      <div class="trust-divider" aria-hidden="true"></div>
+      <div class="trust-item">
+        <div class="trust-num-row"><span class="trust-number" data-target="15">0</span><span class="trust-plus">+ Yrs</span></div>
+        <p class="trust-label">Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <section class="services" id="services" aria-label="Services">
+    <div class="services-inner">
+      <!-- Left -->
+      <div class="services-left">
+        <p class="eyebrow">Our Services</p>
+        <h2 class="section-heading">EVERY<br />DETAIL.<br />PERFECTED.</h2>
+        <p class="section-body">From exterior to interior, we use industry-leading products and techniques to deliver exceptional results every time.</p>
+        <a href="#booking" class="link-arrow">Explore Services <span aria-hidden="true">→</span></a>
+      </div>
+      <!-- Right -->
+      <div class="services-right">
+        <div class="service-col">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M16 8v4M16 20v4M8 16h4M20 16h4"/><circle cx="16" cy="16" r="4"/></svg>
+          </div>
+          <h3 class="service-title">Exterior</h3>
+          <p class="service-desc">Hand wash, decontamination, paint correction, wax &amp; protection.</p>
+        </div>
+        <div class="service-col">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="4" y="10" width="24" height="16" rx="2"/><path d="M10 10V8a2 2 0 014 0v2M18 10V8a2 2 0 014 0v2M4 16h24"/></svg>
+          </div>
+          <h3 class="service-title">Interior</h3>
+          <p class="service-desc">Deep clean, vacuum, leather care &amp; odour removal.</p>
+        </div>
+        <div class="service-col">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M16 4C10 4 6 8 6 14s4 10 10 10 10-4 10-10S22 4 16 4z"/><path d="M16 8v8l5 3"/></svg>
+          </div>
+          <h3 class="service-title">Paint Care</h3>
+          <p class="service-desc">Machine polishing, scratch removal &amp; ceramic coatings.</p>
+        </div>
+        <div class="service-col">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M16 3L5 8v9c0 6.4 4.7 12.4 11 13.9C23.3 29.4 27 23.4 27 17V8L16 3z"/><path d="M11 16l3.5 3.5L21 12"/></svg>
+          </div>
+          <h3 class="service-title">Protection</h3>
+          <p class="service-desc">Ceramic coatings, sealants &amp; long-term protection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TRANSFORMATION (DARK) ═══════════════ -->
+  <section class="transformation" id="transformation" aria-label="The transformation">
+    <div class="transformation-inner">
+      <!-- Left text -->
+      <div class="transform-text">
+        <p class="eyebrow eyebrow-light">The Transformation</p>
+        <h2 class="section-heading section-heading-light">MORE THAN<br />A CLEAN.<br />IT'S A DIFFERENCE<br />YOU FEEL.</h2>
+        <p class="section-body section-body-light">We don't just clean cars. We restore them to their best.</p>
+        <a href="#booking" class="link-arrow link-arrow-light">Watch the Process <span aria-hidden="true">→</span></a>
+      </div>
+
+      <!-- Right car -->
+      <div class="transform-visual">
+        <!-- Orbit ring -->
+        <svg class="orbit-ring" viewBox="0 0 560 420" fill="none" aria-hidden="true">
+          <ellipse cx="280" cy="210" rx="268" ry="198" stroke="#B8A897" stroke-width="0.8" stroke-dasharray="4 8" opacity="0.5"/>
+        </svg>
+        <img src="04_side_profile_transformation.jpg" alt="Side profile of a freshly detailed car" class="transform-car" id="transformCar" />
+        <!-- Hotspot labels -->
+        <div class="hotspot" style="top:18%;left:52%;" id="hs1">
+          <span class="hotspot-dot"></span>
+          <span class="hotspot-line"></span>
+          <span class="hotspot-label">Paint Restored</span>
+        </div>
+        <div class="hotspot hotspot-left" style="top:54%;left:12%;" id="hs2">
+          <span class="hotspot-label">Interior Renewed</span>
+          <span class="hotspot-line"></span>
+          <span class="hotspot-dot"></span>
+        </div>
+        <div class="hotspot" style="bottom:16%;right:18%;" id="hs3">
+          <span class="hotspot-dot"></span>
+          <span class="hotspot-line"></span>
+          <span class="hotspot-label">Wheels Protected</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ DETAIL CARDS ═══════════════ -->
+  <section class="detail-cards" aria-label="Detail showcase">
+    <div class="detail-cards-inner">
+      <div class="detail-card" tabindex="0">
+        <div class="detail-card-img-wrap">
+          <img src="07_interior_detail.jpg" alt="Car interior after deep cleaning — clean seats, dashboard and carpet" class="detail-card-img" loading="lazy" />
+        </div>
+        <div class="detail-card-body">
+          <p class="eyebrow">Interior Care</p>
+          <p class="detail-card-desc">Deep cleaning, leather care, vacuuming and odour removal for a cabin that feels renewed.</p>
+        </div>
+      </div>
+      <div class="detail-card" tabindex="0">
+        <div class="detail-card-img-wrap">
+          <img src="08_wheel_detail.jpg" alt="Car wheel after detailing — clean rim and dressed tyre" class="detail-card-img" loading="lazy" />
+        </div>
+        <div class="detail-card-body">
+          <p class="eyebrow">Wheel Detailing</p>
+          <p class="detail-card-desc">Brake dust removal, tyre dressing and gloss finish for every angle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ WHY / CTA ═══════════════ -->
+  <section class="why-cta" id="why" aria-label="Why choose OLI and booking">
+    <div class="why-cta-inner">
+      <!-- Left: benefits -->
+      <div class="why-left">
+        <p class="eyebrow">Why Choose OLI</p>
+        <h2 class="section-heading">PREMIUM SERVICE.<br />ZERO HASSLE.</h2>
+
+        <ul class="benefits-list">
+          <li class="benefit-item">
+            <div class="benefit-icon">
+              <img src="09_icon_we_come_to_you.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="benefit-text">
+              <h3 class="benefit-title">We Come To You</h3>
+              <p class="benefit-desc">Home, work or anywhere convenient for you.</p>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-icon">
+              <img src="10_icon_save_time.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="benefit-text">
+              <h3 class="benefit-title">Save Time</h3>
+              <p class="benefit-desc">No queues, no waiting. We work around your day.</p>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-icon">
+              <img src="11_icon_quality_products.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="benefit-text">
+              <h3 class="benefit-title">Quality Products</h3>
+              <p class="benefit-desc">Only premium products for the best possible finish.</p>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-icon">
+              <img src="12_icon_satisfaction_guaranteed.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="benefit-text">
+              <h3 class="benefit-title">Satisfaction Guaranteed</h3>
+              <p class="benefit-desc">Not happy? We'll make it right. That's our promise.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: CTA panel -->
+      <div class="cta-panel glass-card" id="booking">
+        <p class="eyebrow">Ready For The Best Finish?</p>
+        <h2 class="cta-heading">LET'S GET YOUR<br />CAR LOOKING NEW.</h2>
+        <a href="tel:+447700000000" class="btn-primary btn-cta magnetic-btn" id="magneticBtn">
+          Book Online Now
+          <svg class="btn-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+        </a>
+        <ul class="cta-reassure">
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M5.5 8.5l2 2 3-4"/></svg>
+            Online Booking in 60 Seconds
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M5.5 8.5l2 2 3-4"/></svg>
+            Instant Confirmation
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M5.5 8.5l2 2 3-4"/></svg>
+            We Come To You Anywhere
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 OLI Mobile Valet. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link" aria-label="OLI Mobile Valet on Instagram">Instagram</a>
+        <a href="#" class="social-link" aria-label="OLI Mobile Valet on Facebook">Facebook</a>
+        <a href="#" class="social-link" aria-label="OLI Mobile Valet on TikTok">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
